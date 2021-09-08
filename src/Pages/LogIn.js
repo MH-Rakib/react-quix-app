@@ -4,6 +4,7 @@ import classes from "../Styles/LogIn.module.css";
 import Illustration from "./../Components/LogInSignIn/Illustration";
 import Form from "../Components/LogInSignIn/Form";
 import Button from "../Components/Inputs/Button";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   return (
@@ -29,7 +30,7 @@ const LogIn = () => {
             </Button>
 
             <div className="info">
-              Don't have an account? <a href="login.html">Signup</a> instead.
+              Don't have an account? <Link to="/signup">Signup</Link> instead.
             </div>
           </>
         </Form>
